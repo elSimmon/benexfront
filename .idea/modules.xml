@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../laravel/ecommerceDashboard/.idea/bankash.iml" filepath="$PROJECT_DIR$/../../laravel/ecommerceDashboard/.idea/bankash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../laravel/benexBack/.idea/benexBack.iml" filepath="$PROJECT_DIR$/../../laravel/benexBack/.idea/benexBack.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/boiler_plate.iml" filepath="$PROJECT_DIR$/.idea/boiler_plate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ecommerceDashboard/.idea/ecommerceDashboard.iml" filepath="$PROJECT_DIR$/../ecommerceDashboard/.idea/ecommerceDashboard.iml" />
     </modules>
   </component>
 </project>

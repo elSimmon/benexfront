@@ -1,12 +1,58 @@
 .App {
-  text-align: center;
+}
+.navbar_links_left a{
+  margin-left: 17px;
+  text-decoration: none;
+  color: #0a0e45;
+  font-weight: bolder;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_login_link {
+  padding: 7px;
+  color: #0a0e45;
+  font-weight: bold;
 }
 
+.main_register_link{
+  margin-left: 17px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+  padding: 7px;
+  background-color: #0a0e45;
+  border-radius: 20px;
+}
+
+.hero{
+  background-color: #0a0e45;
+  padding: 46px;
+  height: auto;
+}
+.swap_form{
+  width: 50%;
+  position: relative;
+  margin-left: 25%;
+}
+.swap_form_input{
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 6px;
+  font-weight: bold;
+  color: #0a0e45;
+  border: solid 2px #0a0e45;
+}
+
+.swap_button{
+  height: 40px;
+  color: #ffffff;
+  background-color: #0a0e45;
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
