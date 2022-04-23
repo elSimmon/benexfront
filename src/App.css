@@ -1,5 +1,8 @@
 .App {
 }
+.landing_nav{
+  background-color: #adcce3;
+}
 .navbar_links_left a{
   margin-left: 17px;
   text-decoration: none;
@@ -25,8 +28,13 @@
 
 .hero{
   background-color: #0a0e45;
-  padding: 46px;
+  padding: 50px;
   height: auto;
+  margin-top: 20px;
+  /*background-image: url('./img/palmtree.png');*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
 }
 .swap_form{
   width: 50%;
@@ -53,32 +61,54 @@
   position: relative;
   width: 100%;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.live_feed_home{
+  color: #e2dde0;
+  background-color: #1d6ca9;
+  position: relative;
+  width: 100%;
+  padding: 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.live_freely_home{
+  color: #ffffff;
+  border-radius: 15px;
+  background-color: #0a0e45;
+  padding: 25px;
+  position: relative;
+  margin-top: -40px;
+  background-image: url('./img/blue.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9;
 }
-
-.App-link {
-  color: #61dafb;
+.video_area_home{
+  width: 100%;
+  height: auto;
+  background-color: #110b44;
+  margin-top: -110px;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color:#ffffff;
 }
+.btn_send_home{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: #e2dde0;
+  background-color: #a34610;
+  margin-top: 25px;
+}
+.btn_swap_home{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: #a34610;
+  background-color: #110b44;
+  margin-top: 25px;
+}
+.footer{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

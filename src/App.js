@@ -6,7 +6,6 @@ import About from "./components/landing/About";
 import Support from "./components/landing/Support";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from "./components/landing/Home";
-import {Button} from "react-bootstrap";
 import Header from "./components/landing/Header";
 
 function App() {

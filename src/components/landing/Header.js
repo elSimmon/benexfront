@@ -5,7 +5,7 @@ import Logo from '../../img/benexlogo.png';
 function Header(){
     return(
         <div>
-            <Navbar bg="info" expand="lg">
+            <Navbar className={"landing_nav fixed-top"} expand="lg">
                 <Container>
                     <Navbar.Brand>
                         <Link to={'/'}>
