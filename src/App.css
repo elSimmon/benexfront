@@ -110,5 +110,15 @@
   margin-top: 25px;
 }
 .footer{
+  background-color: #093b61;
+  min-height: 250px;
+  color: #c1bfc1;
+  padding: 17px;
+}
+.footer_links{
 
+}
+.login_box{
+  padding:20px;
+  margin:20px;
 }

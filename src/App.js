@@ -7,6 +7,7 @@ import Support from "./components/landing/Support";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from "./components/landing/Home";
 import Header from "./components/landing/Header";
+import Footer from "./components/landing/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path='/support' element={<Support/>}>
                 </Route>
             </Routes>
+            <Footer/>
         </BrowserRouter>
     </div>
   );
