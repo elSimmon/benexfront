@@ -1,8 +1,10 @@
-import Laptop from '../../img/laptop1.png';
+import Frontman from '../../img/benex_front_man.png';
 import {Button, Card, Container} from "react-bootstrap";
 import Playstore from '../../img/playstore.png';
 import Appstore from '../../img/appstore.png';
 import { Player } from 'video-react';
+import Video from '../../img/istock1.mp4';
+import Youtube from '../../img/youtube.png';
 
 function Home(){
     return(
@@ -11,23 +13,35 @@ function Home(){
                 <Container>
                     <div className={"row"}>
                         <div className={"col-md-6"}>
-                            <Card className={"swap_form"}>
-                                <Card.Header>Floating Rate || Fixed Rate</Card.Header>
-                                <Card.Body>
-                                    <input type={"text"} placeholder={"You Send"} className={"swap_form_input"} value={"0.001 BTC"}/>
-                                    <input type={"text"} placeholder={"You Get"} className={"swap_form_input"} value={"2000 NGN"}/><br/>
-                                    <button className={"swap_button"}>Swap</button>
-                                </Card.Body>
-                            </Card>
+                            <center>
+                                <Card className={"swap_form"}>
+                                    <Card.Header className={"bg-secondary text-light"}>
+                                        <h5>
+                                            <form>
+                                                <input type={"radio"} value={"Floating Rate"}/>Floating Rate
+                                                <input type={"radio"} value={"Fixed Rate"} />Fixed Rate
+                                            </form>
+                                        </h5>
+                                    </Card.Header>
+                                    <Card.Body>
+                                        <input type={"text"} placeholder={"You Send"} className={"swap_form_input"} value={"0.001 BTC"}/>
+                                        <input type={"text"} placeholder={"You Get"} className={"swap_form_input"} value={"2000 NGN"}/><br/>
+                                        <button className={"swap_button"}>Swap</button>
+                                    </Card.Body>
+                                    <Card.Footer>Swap Crypto</Card.Footer>
+                                </Card>
+                            </center>
                         </div>
                         <div className={"col-md-6"}>
-                            <img
-                                src={Laptop}
-                                width="600"
-                                height="368"
-                                className="di-fluid"
-                                alt="Benex Interface"
-                            />
+                            <center>
+                                <img
+                                    src={Frontman}
+                                    width="280"
+                                    height="400"
+                                    className="di-fluid front_man"
+                                    alt="Benex Interface"
+                                />
+                            </center>
                         </div>
                     </div>
                 </Container>
@@ -36,32 +50,32 @@ function Home(){
                 <Container>
                 <div className={"row"}>
                     <div className={"col-md-2"}>
-                        {/*<p>BTC/NGN</p>*/}
+                        <p>BTC/NGN</p>
                         <h4>25,254,522</h4>
                         <p>N43,000,577</p>
                     </div>
                     <div className={"col-md-2"}>
-                        {/*<p>BTC/NGN</p>*/}
+                        <p>ETH/NGN</p>
                         <h4>25,254,522</h4>
                         <p>N43,000,577</p>
                     </div>
                     <div className={"col-md-2"}>
-                        {/*<p>BTC/NGN</p>*/}
+                        <p>USDT/NGN</p>
                         <h4>25,254,522</h4>
                         <p>N43,000,577</p>
                     </div>
                     <div className={"col-md-2"}>
-                        {/*<p>BTC/NGN</p>*/}
+                        <p>LTC/NGN</p>
                         <h4>25,254,522</h4>
                         <p>N43,000,577</p>
                     </div>
                     <div className={"col-md-2"}>
-                        {/*<p>BTC/NGN</p>*/}
+                        <p>DOGE/NGN</p>
                         <h4>25,254,522</h4>
                         <p>N43,000,577</p>
                     </div>
                     <div className={"col-md-2"}>
-                        {/*<p>BTC/NGN</p>*/}
+                        <p>TRX/NGN</p>
                         <h4>25,254,522</h4>
                         <p>N43,000,577</p>
                     </div>
@@ -72,8 +86,8 @@ function Home(){
             <div className={"live_freely_home"}>
                 <div className={"row"}>
                     <div className={"col-md-6"}>
-                        <h2>Live freely with Benex. It's all about FREEDOM! </h2>
-                        <p>Swap send or spend Crypto for FREE with your Benex Account.</p>
+                        <b><h2>Live freely with Benex. It's all about FREEDOM! </h2>
+                            <p>Swap send or spend Crypto for FREE with your Benex Account.</p></b>
                     </div>
                     <div className={"col-md-3"}>
                         <img
@@ -102,21 +116,25 @@ function Home(){
                         <div className={"col-md-6"}>
                             <Player
                                 playsInline
-                                poster="../../img/binance.png"
-                                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                                poster={Youtube}
+                                src={Video}
                             />
                         </div>
                         <div className={"col-md-6"}>
                             <h2>The Benex Way</h2>
-                            <h4>Alot of people have gone THE BENEX WAY because when you go the Benex Way, you go ALL THE WAY. Let us go the benex way, let us go all the way</h4>
+                            <h5>Our systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?
+
+                                IP address: 197.211.52.32
+                                Time: 2022-04-25T10:13:10Z
+                                URL: https://www.google.com/search?q=yarn&oq=yarn&aqs=chrome..69i57j0i271l2.5</h5>
                         </div>
                     </div>
                     <div className={"row"}>
                         <div className={"col-md-6"}>
-                            <Button className={"btn_send_home"} variant={"outline-primary"}>Send</Button>
+                            <button className={"btn_send_home"}>Send</button>
                         </div>
                         <div className={"col-md-6"}>
-                            <Button className={"btn_swap_home"} variant={"outline-warning"}>Swap</Button>
+                            <button className={"btn_swap_home"}>Swap</button>
                         </div>
                     </div>
                 </Container>

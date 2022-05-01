@@ -8,7 +8,7 @@ function Register(){
                     <div className={"row"}>
                         <div className={"col-md-6 offset-3"}>
                             <Card className={"login_box"}>
-                                <Card.Header><h4>Benex Account Creation</h4><p>Welcome Fill your details correctly</p>
+                                <Card.Header><b><center><h4>Benex Account Creation</h4><p>Welcome Fill your details correctly</p></center></b>
                                 </Card.Header>
                                 <Card.Body>
                                     <input type={"text"} placeholder={"Username"} className={"swap_form_input"} />

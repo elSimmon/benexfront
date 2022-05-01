@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "video-react/dist/video-react.css"; // import css
-
+import "@fontsource/montserrat"; // Defaults to weight 400.
 ReactDOM.render(
   <React.StrictMode>
     <App />

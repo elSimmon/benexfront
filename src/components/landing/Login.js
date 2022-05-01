@@ -8,7 +8,7 @@ function Login(){
                     <div className={"row"}>
                         <div className={"col-md-6 offset-3"}>
                             <Card className={"login_box"}>
-                                <Card.Header><h4>Benex Account Login</h4><p>Welcome back to sign in with Username or Email</p></Card.Header>
+                                <Card.Header><b><center><h4>Benex Account Login</h4><p>Welcome back to sign in with Username or Email</p></center></b></Card.Header>
                                 <Card.Body>
                                     <input type={"text"} placeholder={"Username"} className={"swap_form_input"} />
                                     <input type={"password"} placeholder={"Password"} className={"swap_form_input"} /><br/>

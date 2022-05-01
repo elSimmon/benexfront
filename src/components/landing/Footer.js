@@ -1,6 +1,6 @@
 import {Container} from "react-bootstrap";
 import Logo from "../../img/benexlogo.png";
-import Binance from "../../img/binance.png";
+import Binance from "../../img/dashboard man-03.png";
 
 function Footer(){
     return(
@@ -35,13 +35,14 @@ function Footer(){
                         <div className={"col-md-3"}>
                             <img
                                 src={Binance}
-                                width="250"
-                                height="120"
+                                width="200"
+                                height="250"
                                 className="d-inline-block align-top"
                                 alt="Benex Logo"
                             />
                         </div>
                     </div>
+                    <p>&copy; <b>Benex,</b> All rights Reserved</p>
                 </Container>
             </div>
         </div>

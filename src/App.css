@@ -1,4 +1,5 @@
 .App {
+  font-family: "Montserrat";
 }
 .landing_nav{
   background-color: #adcce3;
@@ -6,13 +7,13 @@
 .navbar_links_left a{
   margin-left: 17px;
   text-decoration: none;
-  color: #0a0e45;
+  color: #042040;
   font-weight: bolder;
 }
 
 .main_login_link {
   padding: 7px;
-  color: #0a0e45;
+  color: #042040;
   font-weight: bold;
 }
 
@@ -21,96 +22,119 @@
   text-decoration: none;
   color: #ffffff;
   font-weight: bolder;
-  padding: 7px;
-  background-color: #0a0e45;
-  border-radius: 20px;
+  padding: 10px;
+  background-color: #042040;
+  border-radius: 15px;
 }
 
 .hero{
-  background-color: #0a0e45;
-  padding: 50px;
+  background-color: #042040;
+  padding: 20px;
   height: auto;
-  margin-top: 20px;
-  /*background-image: url('./img/palmtree.png');*/
-  /*background-position: center;*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: cover;*/
+  margin-top: 60px;
+  background-image: url("./img/benex home banner2-04.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 .swap_form{
-  width: 50%;
-  position: relative;
-  margin-left: 25%;
+  width: 90%;
+  height: auto;
+  position: absolute;
+  margin-left: 5%;
+  border-radius: 25px;
 }
 .swap_form_input{
   position: relative;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   border-radius: 10px;
   font-size: 15px;
   padding: 6px;
   font-weight: bold;
-  color: #0a0e45;
-  border: solid 2px #0a0e45;
+  color: #042040;
+  border: solid 2px #042040;
 }
 
 .swap_button{
   height: 40px;
   color: #ffffff;
-  background-color: #0a0e45;
+  background-color: #042040;
   border-radius: 15px;
   position: relative;
   width: 100%;
 }
 .live_feed_home{
   color: #e2dde0;
-  background-color: #1d6ca9;
+  background-color: rgb(4, 32, 64);
   position: relative;
   width: 100%;
-  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  line-height: 5px;
 }
 .live_freely_home{
   color: #ffffff;
   border-radius: 15px;
-  background-color: #0a0e45;
+  background-color: #042040;
   padding: 25px;
   position: relative;
   margin-top: -40px;
-  background-image: url('./img/blue.jpg');
+  background-image: url('./img/pat6-04.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 9;
+  font-weight: 600;
 }
 .video_area_home{
   width: 100%;
   height: auto;
-  background-color: #110b44;
-  margin-top: -110px;
+  background-color: #042040;
+  margin-top: -130px;
   position: relative;
-  padding-top: 150px;
+  padding-top: 170px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   color:#ffffff;
+  font-weight: 600;
+}
+.video_area_home h5{
+  text-align: justify;
+  line-height: 40px;
+  padding: 30px;
 }
 .btn_send_home{
   width: 100%;
-  height: 50px;
-  border-radius: 10px;
+  height: 40px;
+  border-radius: 15px;
   color: #e2dde0;
-  background-color: #a34610;
+  background-color: #042040;
   margin-top: 25px;
+  background-image: url('./img/pat6-04.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
 }
 .btn_swap_home{
   width: 100%;
-  height: 50px;
-  border-radius: 10px;
-  color: #a34610;
-  background-color: #110b44;
+  height: 40px;
+  border-radius: 15px;
+  color: #e2dde0;
+  background-color: #a34610;
   margin-top: 25px;
+  background-image: url('./img/pat5-02.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
 }
 .footer{
-  background-color: #093b61;
+  background-color: #042040;
   min-height: 250px;
   color: #c1bfc1;
   padding: 17px;
@@ -121,4 +145,22 @@
 .login_box{
   padding:20px;
   margin:20px;
+}
+.front_man{
+  position: relative;
+  z-index: 9;
+  margin-left: -10px;
+}
+.mtn{
+  margin-top: -500px;
+  position: relative;
+}
+.airtel{
+  margin-top: -700px;
+  position: relative;
+}
+.spend{
+  margin-top: -500px;
+  margin-right: -100px;
+  position: relative;
 }
