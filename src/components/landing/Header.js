@@ -28,7 +28,7 @@ function Header(){
                             <Link to="/support">Support</Link>
                             <Link to="/about">About</Link>
                         </Nav>
-                        <Nav className={""}>
+                        <Nav>
                             <Link to="/login" className="main_login_link">
                                 Sign In
                             </Link>

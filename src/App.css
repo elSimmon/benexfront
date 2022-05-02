@@ -15,6 +15,8 @@
   padding: 7px;
   color: #042040;
   font-weight: bold;
+    text-decoration:none;
+    margin-left:10px;
 }
 
 .main_register_link{

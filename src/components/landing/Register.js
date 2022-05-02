@@ -14,7 +14,8 @@ function Register(){
                                     <input type={"text"} placeholder={"Username"} className={"swap_form_input"} />
                                     <input type={"email"} placeholder={"Email Address"} className={"swap_form_input"} />
                                     <input type={"phone"} placeholder={"Phone number"} className={"swap_form_input"} />
-                                    <input type={"password"} placeholder={"Password"} className={"swap_form_input"} /><br/>
+                                    <input type={"password"} placeholder={"Password"} className={"swap_form_input"} />
+                                    <input type={"password"} placeholder={"Password Repeat"} className={"swap_form_input"} /><br/>
                                     <button className={"swap_button"}>Create Account</button>
                                 </Card.Body>
                             </Card>

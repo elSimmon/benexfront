@@ -1,21 +1,27 @@
 import Frontman from '../../img/benex_front_man.png';
-import {Button, Card, Container} from "react-bootstrap";
+import {Button, Card, Container, Nav} from "react-bootstrap";
 import Playstore from '../../img/playstore.png';
 import Appstore from '../../img/appstore.png';
 import { Player } from 'video-react';
 import Video from '../../img/istock1.mp4';
 import Youtube from '../../img/youtube.png';
+import {useState} from "react";
 
 function Home(){
+    const [active, setActive] = useState("firstCard");
     return(
         <div>
             <div className="hero">
                 <Container>
                     <div className={"row"}>
                         <div className={"col-md-6"}>
+                            <Nav>
+                                <Button onClick={()=> setActive("firstCard")} variant="outline-light" size={'lg'}>Swap&raquo;&laquo;</Button>&nbsp;&nbsp;
+                                <Button onClick={()=> setActive("secondCard")} variant="outline-light" size={'lg'}>Send&raquo;&raquo;</Button>
+                            </Nav><br/><br/>
                             <center>
-                                <Card className={"swap_form"}>
-                                    <Card.Header className={"bg-secondary text-light"}>
+                                {active === "firstCard" && <Card className={"swap_form"}>
+                                    <Card.Header className={"text-primary"}>
                                         <h5>
                                             <form>
                                                 <input type={"radio"} value={"Floating Rate"}/>Floating Rate
@@ -29,7 +35,23 @@ function Home(){
                                         <button className={"swap_button"}>Swap</button>
                                     </Card.Body>
                                     <Card.Footer>Swap Crypto</Card.Footer>
-                                </Card>
+                                </Card>}
+                                {active === "secondCard" && <Card className={"swap_form"}>
+                                    <Card.Header className={" text-primary"}>
+                                        <h5>
+                                            <form>
+                                                <input type={"radio"} value={"Floating Rate"}/>Floating Rate
+                                                <input type={"radio"} value={"Fixed Rate"} />Fixed Rate
+                                            </form>
+                                        </h5>
+                                    </Card.Header>
+                                    <Card.Body>
+                                        <input type={"text"} placeholder={"You Send"} className={"swap_form_input"} value={"0.001 BTC"}/>
+                                        <input type={"text"} placeholder={"You Get"} className={"swap_form_input"} value={"2000 NGN"}/><br/>
+                                        <button className={"swap_button"}>Send</button>
+                                    </Card.Body>
+                                    <Card.Footer>Send Crypto</Card.Footer>
+                                </Card>}
                             </center>
                         </div>
                         <div className={"col-md-6"}>
