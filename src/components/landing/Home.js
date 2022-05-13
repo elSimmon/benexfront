@@ -5,9 +5,34 @@ import Appstore from '../../img/appstore.png';
 import { Player } from 'video-react';
 import Video from '../../img/istock1.mp4';
 import Youtube from '../../img/youtube.png';
-import {useState} from "react";
+import {useState, useEffect} from "react";
+import axios from 'axios';
 
 function Home(){
+    const [coins, getCoins] = useState([]);
+    const URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=ngn&order=market_cap_desc&per_page=6&page=1&sparkline=false\n";
+
+    // useEffect(()=>{
+    //     axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=ngn&order=market_cap_desc&per_page=100&page=1&sparkline=false\n').then(res =>{
+    //         setCoins(res.data);
+    //     }).catch(error =>console.log(error))
+    // }, []);
+    useEffect(() => {
+        fetchData()
+    }, [])
+
+    const fetchData = () => {
+        fetch(URL)
+            .then((res) =>
+                res.json())
+
+            .then((response) => {
+                console.log(response);
+                getCoins(response);
+            })
+
+    }
+
     const [active, setActive] = useState("firstCard");
     return(
         <div>
@@ -71,36 +96,46 @@ function Home(){
             <div className={"live_feed_home"}>
                 <Container>
                 <div className={"row"}>
-                    <div className={"col-md-2"}>
-                        <p>BTC/NGN</p>
-                        <h4>25,254,522</h4>
-                        <p>N43,000,577</p>
-                    </div>
-                    <div className={"col-md-2"}>
-                        <p>ETH/NGN</p>
-                        <h4>25,254,522</h4>
-                        <p>N43,000,577</p>
-                    </div>
-                    <div className={"col-md-2"}>
-                        <p>USDT/NGN</p>
-                        <h4>25,254,522</h4>
-                        <p>N43,000,577</p>
-                    </div>
-                    <div className={"col-md-2"}>
-                        <p>LTC/NGN</p>
-                        <h4>25,254,522</h4>
-                        <p>N43,000,577</p>
-                    </div>
-                    <div className={"col-md-2"}>
-                        <p>DOGE/NGN</p>
-                        <h4>25,254,522</h4>
-                        <p>N43,000,577</p>
-                    </div>
-                    <div className={"col-md-2"}>
-                        <p>TRX/NGN</p>
-                        <h4>25,254,522</h4>
-                        <p>N43,000,577</p>
-                    </div>
+                    {coins.map((coin, i) => {
+                        // return <div className={"col-md-2"} key={i}>
+                        //     <p>{coin.symbol}/NGN</p>
+                        //     <h4>${coin.circulating_supply}</h4>
+                        //     <p>N{coin.current_price}</p>
+                        // </div>
+                        return <div className={"col-md-2"} key={i}>
+                         <table className={"table table-responsive table-borderless text-light"}>
+                             <tr>
+                                 <th rowSpan="3">
+                                     <img
+                                     src={coin.image}
+                                     width="60"
+                                     height="60"
+                                     className="di-fluid"
+                                     alt="Coin Image"/>
+                                 </th>
+                                 <td>{coin.name}</td>
+                             </tr>
+                             <tr>
+                                 <td>N{(coin.current_price).toLocaleString(undefined, {maximumFractionDigits:2})}</td>
+                             </tr>
+                             <tr>
+                                <td>
+                                    {coin.price_change_percentage_24h < 0
+                                        ?
+                                        <>
+                                            <span className={"coin_negative"}>{coin.price_change_percentage_24h}
+                                            </span>
+                                        </>
+                                        :
+                                        <>
+                                            <span className={"coin_positive"}>+{coin.price_change_percentage_24h}
+                                            </span>
+                                        </>
+                                    }%</td>
+                            </tr>
+                        </table>
+                        </div>
+                    })}
                 </div>
                 </Container>
             </div>

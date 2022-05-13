@@ -166,3 +166,9 @@
   margin-right: -100px;
   position: relative;
 }
+.coin_negative{
+    color: #d42506;
+}
+.coin_positive{
+    color: #a9dd0a;
+}
